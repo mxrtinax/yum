@@ -4,8 +4,10 @@ import { BrowserRouter } from "react-router-dom";
 import Search from "./components/Search";
 import styled from "styled-components";
 import { GiKnifeFork } from "react-icons/gi";
+import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {BiUserCircle} from 'react-icons/bi'
+
 
 function App() {
   return (
@@ -31,6 +33,11 @@ const Logo = styled(Link)`
   font-family: 'Neucha', cursive;
   color: #000;
   margin-left: 10px;
+`
+const Userlogo = styled(Link)`
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
 `
 const Nav = styled.div`
 padding:4rem 0rem;
