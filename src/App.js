@@ -5,6 +5,7 @@ import Search from "./components/Search";
 import styled from "styled-components";
 import { GiKnifeFork } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import {BiUserCircle} from 'react-icons/bi'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Nav>
       <GiKnifeFork/>
       <Logo to={'/'}>yum</Logo>
+      <Logo to={'/user'}><BiUserCircle/></Logo>
     </Nav>
       <div className="App">
         <Search/>
@@ -28,6 +30,7 @@ const Logo = styled(Link)`
   font-weight: 700;
   font-family: 'Neucha', cursive;
   color: #000;
+  margin-left: 10px;
 `
 const Nav = styled.div`
 padding:4rem 0rem;
